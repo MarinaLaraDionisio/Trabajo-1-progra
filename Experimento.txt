@@ -1,0 +1,18 @@
+﻿Experimento de Programación:
+Comprobar si es más rápido resolver el problema de  mediante un algoritmo iterativo o uno recursivo.
+Álvaro Guzmán Álvarez 20164
+________________
+
+
+Objetivo de la práctica.
+El objetivo de esta práctica es que el alumno contraste la rapidez y la eficiencia de la resolución de un problema práctico a través de programación iterativa y programación recursiva.
+En este caso el problema planteado es 
+Basaremos nuestro procedimiento y nuestras conclusiones en los siguientes parámetros:
+Número de iteraciones, tiempo empleado y espacio que han ocupado todas las variables generadas en la memoria del programa. Poner aquí el análisis previo.
+Fundamento teórico.
+Archivos a emplear en la realización de la práctica.
+Aquí tenemos que explicar el código que hay en los archivos.
+Procedimiento experimental.
+Aquí tenemos que poner la explicación de las pruebas.
+Conclusión.
+Anexo: Reparto de roles dentro de la realización del experimento.
