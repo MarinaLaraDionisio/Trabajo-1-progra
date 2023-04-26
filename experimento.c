@@ -1,5 +1,5 @@
 int main(){
-  float x; int p;
+  float x; int p; int iter;
   
   printf("Introduzca el valor del número que quiere elevar: ");
   scanf("%f", &x);
@@ -9,7 +9,7 @@ int main(){
   
   x=potenciaWhile(x, p);
   
-  printf("El valor obtenido es: %f", x)
+  printf("El valor obtenido mediante el método iterativo es: %f", x);
   
   return 0;
 }
