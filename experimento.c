@@ -1,6 +1,7 @@
 #include<stdio.h>
+float x; int p;
 int main(){
-  float x; int p, citer, crecur;
+  int citer, crecur;
   
   printf("Introduzca el valor del número que quiere elevar: ");
   scanf("%f", &x);
