@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main(){
-  float x; int p; int iter;
+  float x; int p, citer, crecur;
   
   printf("Introduzca el valor del número que quiere elevar: ");
   scanf("%f", &x);
@@ -8,9 +8,10 @@ int main(){
   printf("Introduzca el valor de la potenncia a la que quiere elevar: ");
   scanf("%d", &p);
   
-  x=potenciaWhile(x, p);
+  x=potenciaWhile(x, p, &citer);
   
   printf("El valor obtenido mediante el método iterativo es: %f", x);
+  printf("Las iteraciones que hemos necesitado son: %d", citer);
   
   x=potenciaRecursiva(x, p);
  
