@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include"funciones.h"
+extern float x; extern int p;
 float potenciaRecursiva(float numero, float potencia)
 {
     if (potencia <= 0)
