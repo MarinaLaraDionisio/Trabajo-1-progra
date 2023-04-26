@@ -14,9 +14,5 @@ int main(){
   printf("El valor obtenido mediante el método iterativo es: %f", x);
   printf("Las iteraciones que hemos necesitado son: %d", citer);
   
-  x=potenciaRecursiva(x, p);
- 
-  printf("El valor obtenido mediante el método iterativo es: %f", x);
-  
   return 0;
 }
