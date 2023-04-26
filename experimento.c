@@ -1,3 +1,4 @@
+#include<stdio.h>
 int main(){
   float x; int p; int iter;
   
