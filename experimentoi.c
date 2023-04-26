@@ -15,6 +15,7 @@ int main(){
   tiempo = (double)(end - begin) / CLOCKS_PER_SEC;
   printf("El valor obtenido mediante el método iterativo es: %f", x);
   printf("Las iteraciones que hemos necesitado son: %d", citer);
+  printf("El tiempo empleado es %f", tiempo);
   
   return 0;
 }
