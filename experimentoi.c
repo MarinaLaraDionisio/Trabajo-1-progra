@@ -2,7 +2,7 @@
 #include<time.h>
 float x; int p;
 int main(){
-  int citer, crecur;
+  int citer;
   double time;
   printf("Introduzca el valor del número que quiere elevar: ");
   scanf("%f", &x);
