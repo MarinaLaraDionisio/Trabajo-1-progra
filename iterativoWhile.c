@@ -9,6 +9,8 @@ float potenciaWhile(float numero, int potencia)
     return resultado;
 }
 
+
+//comentario
 int main(){
   float x; int p;
   
