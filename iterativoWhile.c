@@ -1,3 +1,5 @@
+#include<stdio.h>
+#include"funciones.h"
 float potenciaWhile(float numero, int potencia)
 {
     long resultado = numero;
