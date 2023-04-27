@@ -9,6 +9,12 @@ float potenciaRecursiva(float numero, float potencia)
     }
     else
     {
-        return numero * potenciaRecursiva(numero, potencia - 1);
+       // return numero * potenciaRecursiva(numero, potencia - 1);
+        if(!potencia%2){
+        return potenciaRecursiva(numero,potencia/2)*potenciaRecursiva(numero,potencia/2);
+        }
+        else{
+        returnpotenciaRecursiva(numero,(potencia-1)/2)*potenciaRecursiva(numero,(potencia-1)/2)*numero;
+        }
     }
 }
