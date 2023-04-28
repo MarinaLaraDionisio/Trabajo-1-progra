@@ -1,16 +1,16 @@
 #include<stdio.h>
 #include<time.h>
-float x; int p;
+float n; int p;
 int main(){
   int citer;
   double time;
   printf("Introduzca el valor del número que quiere elevar: ");
-  scanf("%f", &x);
+  scanf("%f", &n);
   
   printf("Introduzca el valor de la potenncia a la que quiere elevar: ");
   scanf("%d", &p);
   clock_t begin = clock();
-  x=potenciaWhile(x, p, &citer);
+  x=potenciaWhile(n, p, &citer);
   clock_t end = clock();
   tiempo = (double)(end - begin) / CLOCKS_PER_SEC;
   printf("El valor obtenido mediante el método iterativo es: %f", x);
