@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include"funciones.h"
-extern float x; extern int p;
+extern float n; extern int p;
 float potenciaWhile(float numero, int potencia, int *citer)
 {
     long resultado = numero;
