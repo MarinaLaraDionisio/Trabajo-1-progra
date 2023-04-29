@@ -1,17 +1,20 @@
 #include<stdio.h>
 #include"funciones.h"
-extern float n; extern int p;
-float potenciaWhile(float numero, int potencia, int *citer)
+/*extern float n; extern int p;*/
+/*extern int citer;*/
+void potenciaWhile(float numero, int potencia, int citer)
 {
-    long resultado = numero;
-    if(potencia==0){
-    return 1;
+    float resultado = numero;
+    if(potencia<=0){
+    printf("Esto no nos sirve");
     }
     while (potencia > 1)
     {
         resultado = resultado * numero;
         potencia--;
-        *citer++;
+        citer++;
     }
-    return resultado;
+    printf("El valor obtenido mediante el método iterativo es: %f\n", resultado);
+    printf("Las iteraciones que hemos necesitado son: %d\n", citer);
+ /*   return resultado;*/
 }
