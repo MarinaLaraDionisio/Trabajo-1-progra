@@ -1,2 +1,2 @@
-float potenciaWhile(float a, int n);
-float potenciaRecursiva(float numero, float potencia);
+void potenciaWhile(float a, int n, int p);
+float potenciaRecursiva(float numero, float potencia, int* p);
