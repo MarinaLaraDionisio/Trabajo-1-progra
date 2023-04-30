@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <time.h>
+#include <stdlib.h>
 #include "funciones.h"
 /*float n; int p;
 int main(){
