@@ -7,9 +7,13 @@ Guion de prácticas para algoritmo de calcular potencia, recursivo e iterativo
 
 long power(int x, int e)
 {
-    // condición base
+   
     if (e == 0) {
+     
         return 1L;
+     
+     // 1L se trata de una forma de decirle a la funcion que retorne el numero que probablemente sea de gran tamaño debido a que al ser una potencia no sabemos como de grandde será
+     
     }
  
     if (e & 1) { 
