@@ -10,7 +10,7 @@ int main(){
   printf("Introduzca el valor del número que quiere elevar: ");
   scanf("%f", &n);
 
-  printf("Introduzca el valor de la potenncia a la que quiere elevar: ");
+  printf("Introduzca el valor de la potencia a la que quiere elevar: ");
   scanf("%d", &p);
   time_t begin = time(NULL);
   n=potenciaRecursiva(n, p, &crecur);
