@@ -6,7 +6,7 @@ float n; int p, citer, crecur;
 int main(){
   /*int citer;*/
   printf("Introduzca el valor del número que quiere elevar: ");
-  scanf("%lf", &n);
+  scanf("%f", &n);
 
   printf("Introduzca el valor de la potencia a la que quiere elevar: ");
   scanf("%d", &p);
