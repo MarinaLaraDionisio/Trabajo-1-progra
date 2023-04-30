@@ -2,13 +2,13 @@
 #include <time.h>
 #include <stdlib.h>
 #include "funciones.h"
-/*float n; int p;
+float n; int p;
 int main(){
   int crecur;
   double tiempo;
 
   printf("Introduzca el valor del número que quiere elevar: ");
-  scanf("%lf", &n);
+  scanf("%f", &n);
 
   printf("Introduzca el valor de la potenncia a la que quiere elevar: ");
   scanf("%d", &p);
@@ -20,4 +20,4 @@ int main(){
 
   return 0;
 }
-*/
+
