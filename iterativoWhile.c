@@ -6,7 +6,7 @@ void potenciaWhile(float numero, int potencia, int citer)
 {
     float resultado = numero;
     if(potencia<=0){
-    printf("Esto no nos sirve");
+    printf("Esto no nos sirve"); //esto es mentira eh 
     }
     while (potencia > 1)
     {
