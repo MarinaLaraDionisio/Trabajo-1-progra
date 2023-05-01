@@ -26,7 +26,7 @@ int main(){
 
   printf("El tiempo empleado en ejecutar el archivo es: %f", tiempo);
 
-  char *nombreArchivo = "recursivo.txt";
+  char *nombreArchivo = "iterativo.txt";
     char *modo = "a+";// w es para sobrescribir, a+ es para añadir al existente
     FILE *archivo = fopen(nombreArchivo, modo);
     if (archivo == NULL) {
