@@ -15,7 +15,7 @@ void potenciaWhile(float n, int p, int c)
             p--;
             c++;
         }
-        printf("El valor obtenido mediante el método iterativo es: %f\n", resultado);
+        printf("El valor obtenido mediante el algoritmo iterativo es: %f\n", resultado);
         printf("Las iteraciones que hemos necesitado son: %d\n", c);
     }
  /*   return resultado;*/
