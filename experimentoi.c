@@ -1,23 +1,24 @@
 #include <stdio.h>
-#include <time.h>
-#include <stdlib.h>
+#include <sys/time.h>
 #include "funciones.h"
-float n; int p, citer, crecur;
+float num; int pot, citer, crecur;
 int main(){
   /*int citer;*/
-  printf("Introduzca el valor del número que quiere elevar: ");
-  scanf("%f", &n);
+  struct timeval ini, fin;
+  double tiempo;
+  printf("Introduzca el valor del numero que quiere elevar: ");
+  scanf("%f", &num);
 
-  printf("Introduzca el valor de la potencia a la que quiere elevar: ");
-  scanf("%d", &p);
-  time_t begin = time(NULL);
-  potenciaWhile(n, p, citer);
-  time_t end = time(NULL);
-  printf("El valor obtenido mediante el método iterativo es: %f\n", n);
-  printf("Las iteraciones que hemos necesitado son: %d\n", citer);
-  printf("El tiempo empleado en el algoritmo iterativo es %d", (end - begin));
- /* n=potenciaRecursiva(n, p, &crecur);
-printf("El valor obtenido mediante el método recursivo es: %f\n", n);
-  printf("Las iteraciones que hemos necesitado son: %d\n", citer);*/
+  printf("Introduzca el valor de la potenncia a la que quiere elevar: ");
+  scanf("%d", &pot);
+  getchar();
+  gettimeofday(&ini, NULL); //Inicio de la ejecución
+  potenciaWhile(num, pot, citer);
+  gettimeofday(&fin, NULL);
+  tiempo=((fin.tv_sec-ini.tv_sec)*1000+(fin.tv_usec-ini.tv_usec)/1000.0)/1000;
+  printf("El tiempo empleado en el algoritmo iterativo es %lf", tiempo);
+  /*num=potenciaRecursiva(num, pot, &crecur);
+  printf("El valor obtenido mediante el método recursivo es: %f\n", num);
+  printf("Las iteraciones que hemos necesitado son: %d\n", crecur);*/
   return 0;
 }
