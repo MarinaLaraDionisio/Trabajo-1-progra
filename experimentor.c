@@ -16,7 +16,7 @@ int main(){
   n=potenciaRecursiva(n, p, &crecur);
   time_t end = time(NULL);
   tiempo= (double)(end - begin);
-  printf("El valor obtenido mediante el método iterativo es: %f", n);
+  printf("El valor obtenido mediante recursividad es: %f", n);
 
   return 0;
 }
