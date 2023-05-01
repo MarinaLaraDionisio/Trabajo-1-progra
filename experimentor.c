@@ -7,7 +7,7 @@ int main(){
   int crecur;
   double tiempo;
 
-  printf("Introduzca el valor del número que quiere elevar: ");
+  printf("Introduzca el valor que quiere elevar: ");
   scanf("%f", &n);
 
   printf("Introduzca el valor de la potencia a la que quiere elevar: ");
