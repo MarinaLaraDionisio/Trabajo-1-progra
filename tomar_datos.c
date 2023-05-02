@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include<string.h>
 
 int main()
 {
@@ -10,24 +11,32 @@ int main()
     //iterativo = fopen("iterativo.txt", "r");
 
     if ((recursivo == NULL) /*|| (iterativo == NULL)*/){
-            printf("\nError de apertura del archivo. \n\n");
+            printf("\nError de apertura del archivo. \n");
     }
 
     else{
         int repeticiones = 0;
-        while(fgets(recursivo) != EOF){media_recursivo = fgets(recursivo)-'0'; repeticiones++}
+        while(fgets(recursivo) != EOF){
+            media_recursivo = media_recursivo+strtof(fgets(recursivo), NULL); 
+            repeticiones++}
         media_recursivo=media_recursivo/repeticiones;
 
         repeticiones=0;
-       // while(( fgets(iterativo)) != EOF) {media_iterativo = fgets(iterativo)-'0'; repeticiones++;}
+       // while(( fgets(iterativo)) != EOF) {
+            media_iterativo = media_iterativo+strtof(fgets(iterativo), NULL); 
+            repeticiones++;}
        //media_iterativo=media_iterativo/repeticiones;
 
-       //C¡LCULO DE LA VARIANZA
+       //C√ÅLCULO DE LA VARIANZA
         repeticiones=-1;
-        while(fgets(recursivo) != EOF) {varianza_recursivo = varianza_recursivo+fgets(recursivo)-'0'-media_recursivo; repeticiones++}
+        while(fgets(recursivo) != EOF) {
+            varianza_recursivo = varianza_recursivo+strtof(fgets(recursivo), NULL)-media_recursivo; 
+            repeticiones++}
         varianza_recursivo=varianza_recursivo/repeticiones:
         /*repeticiones=-1;
-        while(fgets(iterativo) != EOF) {varianza_iterativo = varianza_iterativo+fgets(iterativo)-'0'-media_iterativo; repeticiones++}
+        while(fgets(iterativo) != EOF) {
+            varianza_iterativo = varianza_iterativo+strtof(fgets(iterativo), NULL)-media_iterativo; 
+            repeticiones++}
         varianza_iterativo=varianza_iterativo/repeticiones*/
     }
 
