@@ -3,7 +3,7 @@
 #include "funciones.h"
 float n; int p;
 int main(){
- int crecur;
+ int crecur=0;
   clock_t t; double tiempo;
 
   printf("Introduzca el valor que quiere elevar: ");
@@ -12,7 +12,7 @@ int main(){
   printf("Introduzca el valor de la potencia a la que quiere elevar: ");
   scanf("%d", &p);
   t=clock();
-  n=potenciaWhile(n, p, 0);
+  n=potenciaWhile(n, p, &crecur);
   t = clock()-t;
 
   tiempo= ((double)t)/CLOCKS_PER_SEC;
