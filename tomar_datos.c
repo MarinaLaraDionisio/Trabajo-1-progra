@@ -17,25 +17,26 @@ int main()
     else{
         int repeticiones = 0;
         while(fgets(recursivo) != EOF){
-            media_recursivo = media_recursivo+strtof(fgets(recursivo), NULL); 
+            media_recursivo = media_recursivo+atof(fgets(recursivo)); 
             repeticiones++}
         media_recursivo=media_recursivo/repeticiones;
 
         repeticiones=0;
-       // while(( fgets(iterativo)) != EOF) {
-            media_iterativo = media_iterativo+strtof(fgets(iterativo), NULL); 
+        
+       /* while(( fgets(iterativo)) != EOF) {
+            media_iterativo = media_iterativo+atof(fgets(iterativo)); 
             repeticiones++;}
-       //media_iterativo=media_iterativo/repeticiones;
+       media_iterativo=media_iterativo/repeticiones;*/
 
        //CÁLCULO DE LA VARIANZA
         repeticiones=-1;
         while(fgets(recursivo) != EOF) {
-            varianza_recursivo = varianza_recursivo+strtof(fgets(recursivo), NULL)-media_recursivo; 
+            varianza_recursivo = varianza_recursivo+atof(fgets(recursivo))-media_recursivo; 
             repeticiones++}
         varianza_recursivo=varianza_recursivo/repeticiones:
         /*repeticiones=-1;
         while(fgets(iterativo) != EOF) {
-            varianza_iterativo = varianza_iterativo+strtof(fgets(iterativo), NULL)-media_iterativo; 
+            varianza_iterativo = varianza_iterativo+atof(fgets(iterativo))-media_iterativo; 
             repeticiones++}
         varianza_iterativo=varianza_iterativo/repeticiones*/
     }
