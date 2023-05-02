@@ -2,7 +2,7 @@
 #include"funciones.h"
 /*extern float n; extern int p;*/
 /*extern int citer;*/
-void potenciaWhile(float n, int p, int c)
+float potenciaWhile(float n, int p, int c)
 {
     float resultado = n;
     if(p<=0){
@@ -18,5 +18,5 @@ void potenciaWhile(float n, int p, int c)
         printf("El valor obtenido mediante el algoritmo iterativo es: %f\n", resultado);
         printf("Las iteraciones que hemos necesitado son: %d\n", c);
     }
- /*   return resultado;*/
+    return resultado;
 }
