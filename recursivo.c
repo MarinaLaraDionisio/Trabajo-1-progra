@@ -1,20 +1,24 @@
 #include<stdio.h>
 #include"funciones.h"
-extern float n; extern int p;
-float potenciaRecursiva(float numero, float potencia, int *crecur){
-    *crecur=*crecur+1;
-    if (potencia <= 0)
+unsigned int potenciaRecursiva(unsigned int numero,unsigned int potencia, int *contador){
+*contador=*contador+1;
+    if (potencia <= 1)
     {
-        return 1;
+        return numero;
     }
     else
     {
+        unsigned int pot;
+
        // return numero * potenciaRecursiva(numero, potencia - 1);
-        if(!potencia%2){
-            return potenciaRecursiva(numero,potencia/2, *crecur)*potenciaRecursiva(numero,potencia/2, *crecur);
+        if(!(potencia%2)){
+            pot=potenciaRecursiva(numero,potencia/2, contador);
+            return pot*pot;
         }
         else{
-            return potenciaRecursiva(numero,(potencia-1)/2, *crecur)*potenciaRecursiva(numero,(potencia-1)/2, *crecur)*numero;
+            pot=potenciaRecursiva(numero,(potencia-1)/2, contador);
+            return pot*pot*numero;
         }
     }
 }
+
