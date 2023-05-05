@@ -31,7 +31,7 @@ int main(){
     /*Medición del tiempo.*/
     getchar();
     gettimeofday(&tini, NULL);
-    for(int k=0;k<10000;k++){ //Este es el bucle en el que realizamos nuestro algoritmo varias veces para medir el tiempo.
+    for(int k=0;k<1000000;k++){ //Este es el bucle en el que realizamos nuestro algoritmo varias veces para medir el tiempo.
         citer=0;
         n=aux;/*Aquí es donde entra en juego aux. Al guardar el valor introducido por el usuario podemos volver a ponerlo en n para que nuestro
         algoritmo se ejecute siempre con los mismos parámetros. Para esto sirven estos 2 pasos. De lo contrario, cada vez tendríamos números
