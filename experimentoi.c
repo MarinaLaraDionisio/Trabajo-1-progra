@@ -4,8 +4,7 @@ hora interna del ordenador y poder operar con esas horas guardadas en nuestras v
 #include "funciones.h"
 int main(){
     unsigned int n, aux, p, memoria;/*n es la variable que usamos como base y p es el exponente al que se eleva.
-    memoria es la variable que hemos usado para medir el consumo de memoria, que estimaremos posteriormente.
-    (Explicar por qué las declaramos como locales en el documento)*/
+    memoria es la variable que hemos usado para medir el consumo de memoria, que estimaremos posteriormente.*/
     int citer=0;/*Con esta variable podremos llevar la cuenta de cuántas veces se ha ejecutado nuestro algoritmo
     (cuántas iteraciones se han llevado a cabo). La inicializamos a 0 para evitar problemas de que pueda haber
     algo en la dirección de memoria que se le ha asignado.*/
@@ -30,16 +29,21 @@ int main(){
     /*Medición del tiempo.*/
     getchar();
     gettimeofday(&tini, NULL);
-    for(int k=0;k<10000;k++){
+    for(int k=0;k<10000;k++){ //Este es el bucle en el que realizamos nuestro algoritmo varias veces para medir el tiempo.
         citer=0;
-        n=aux;
+        n=aux;/*Con estos 2 pasos lo que hacemos es "resetear" nuestros operadores, evitando así que se puedan hacer números muy grandes a medida
+        que transcurre el bloque, que enlentecerían el proceso introduciendo así ruido en nuestra medición*/
         n=potenciaWhile(n, p, &citer);
     }
     gettimeofday(&tfin, NULL);
     tiempo= ((tfin.tv_sec-tini.tv_sec)*1000+(tfin.tv_usec-tini.tv_usec)/1000.0);
     printf("El tiempo empleado ha sido %lf milisegundos", tiempo);
 
-  char *nombreArchivo = "iterativo.txt";
+    /* a continuación vamos a guardar el valor del tiempo de ejecución en un archivo, llamado iterativo.txt. 
+    Con este método, no se borra la información que hubiera anteriormente, por lo que podremos acceder en cualquier momento a los tiempos obtenidos.
+    Gracias a esto, en otro programa extraeremos esos datos para obtener la media y la varianza de los mismos*/
+    
+    char *nombreArchivo = "iterativo.txt";
     char *modo = "a+";// w es para sobrescribir, a+ es para añadir al existente
     FILE *archivo = fopen(nombreArchivo, modo);
     if (archivo == NULL) {
