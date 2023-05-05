@@ -19,7 +19,7 @@ int main(){
     getchar();
     gettimeofday(&tini, NULL);
     
-    for (int k=0; k<100000; k++){
+    for (int k=0; k<1000000; k++){
         crecur=0;
         n=potenciaRecursiva(n, p, llamadas);
   }
