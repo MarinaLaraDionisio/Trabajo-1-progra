@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include"funciones.h"
+
 unsigned int potenciaRecursiva(unsigned int numero,unsigned int potencia, int *contador){
 *contador=*contador+1;
     if (potencia <= 1)
@@ -9,13 +10,12 @@ unsigned int potenciaRecursiva(unsigned int numero,unsigned int potencia, int *c
     else
     {
         unsigned int pot;
-
-       // return numero * potenciaRecursiva(numero, potencia - 1);
-        if(!(potencia%2)){
+        
+        if(!(potencia%2)){ //para potencias pares
             pot=potenciaRecursiva(numero,potencia/2, contador);
             return pot*pot;
         }
-        else{
+        else{ //para potencias impares
             pot=potenciaRecursiva(numero,(potencia-1)/2, contador);
             return pot*pot*numero;
         }
