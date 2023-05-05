@@ -14,7 +14,7 @@ int main()
     }
 
     else{
-//C¡LCULO DE LA MEDIA:
+//C√ÅLCULO DE LA MEDIA:
 
         int repeticiones = 0;
         float c;
@@ -47,13 +47,13 @@ int main()
 
         printf("La media de los datos de tiempo mediante algoritmo iterativo es %f\n", media_iterativo);
 
-//C¡LCULO DE LA VARIANZA:
+//C√ÅLCULO DE LA VARIANZA:
 
 //---------------------------------------------------PARA LA VARIANZA DEL RECURSIVO-------------------------------------------------------------------------------------
 
         fclose(recursivo); //reabrimos el .txt para poder leerlo desde el principio de nuevo
         recursivo = fopen("recursivo.txt", "r");
-        repeticiones=-1; //reinicializamos repeticiones a -1 porque la varianza tiene en el denominador en n˙mero de elementos-1
+        repeticiones=-1; //reinicializamos repeticiones a -1 porque la varianza tiene en el denominador en n√∫mero de elementos-1
         aux=fscanf(recursivo, "%f", &c);
         do{
             varianza_recursivo = varianza_recursivo+CUADRADO(c-media_recursivo);
@@ -78,6 +78,7 @@ int main()
         printf("La varianza de lo datos de tiempo del algoritmo iterativo es %f\n", varianza_iterativo);
     }
 
-        fclose(recursivo);
+    fclose(recursivo);
+    fclose(iterativo);
     return 0;
 }
