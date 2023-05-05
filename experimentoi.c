@@ -21,7 +21,9 @@ int main(){
     /*Le pedimos al usuario que introduzca el exponente.*/
     n=potenciaWhile(n, p, &citer);/*Ejecución del algoritmo iterativo*/
 
-    memoria=sizeof(int)+sizeof(int);/*Estimación que hemos realizado de la memoria.*/
+    memoria=sizeof(int)+sizeof(int)+sizeof(int);/*Estimación que hemos realizado de la memoria. El hecho de que se sume 3 veces el espacio
+    que ocupa un int es debido a que en nuestro algoritmo se usan los 2 parámetros que le pasamos y el parámetro auxiliar que creamos (está
+    explicado en el código de este algoritmo).*/
 
     printf("El valor obtenido mediante el algoritmo iterativo es: %u\n", n);
 
