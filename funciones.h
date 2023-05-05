@@ -1,2 +1,2 @@
-unsigned int potenciaWhile(unsigned int a, unsigned int n, int *p);
-unsigned int potenciaRecursiva(unsigned int numero,unsigned int potencia, int* contador);
+unsigned int potenciaWhile(unsigned int, unsigned int, int *);
+unsigned int potenciaRecursiva(unsigned int, unsigned int, int * );
